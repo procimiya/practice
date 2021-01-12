@@ -1,0 +1,148 @@
+.header {
+  height: 50px;
+  background-color: #000;
+}
+
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 30px;
+  color: #f2f2f2;
+  line-height: 50px;
+}
+
+.header-nav ul {
+  display: flex;
+}
+
+.header-nav li {
+  margin-right: 30px;
+  font-size: 12px;
+}
+
+.header-nav a {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+.eyecatch {
+  height: 600px;
+  background: url(./img/eyecatch.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.eyecatch h1 {
+  position: absolute;
+  top: 55%;
+  left: 10%;
+  font-size: 38px;
+  font-style: italic;
+  font-weight: bold;
+  font-family: 'Times New Roman',"ＭＳ Ｐゴシック";
+  color: #f2f2f2;
+  line-height: 1;
+}
+
+#mission {
+  background-color: #000;
+  height: 300px;
+  margin-bottom: 180px;
+  justify-content: center;
+  position: relative;
+}
+
+.mission-contents {
+  color: #f2f2f2;
+  width: 80%;
+  position: relative;
+}
+
+.mission-contents h1 {
+  font-size: 28px;
+  position: absolute;
+  top: 100px;
+  left: 150px;
+}
+
+.mission-contents p {
+  font-size: 18px;
+  position: absolute;
+  top: 150px;
+  left: 150px;
+}
+
+.mission-contents a {
+  text-decoration: none;
+  position: absolute;
+  top: 260px;
+  left: 150px;
+}
+
+.mission-contents img {
+  width: 400px;
+  margin-top: 60px;
+  margin-left: 80%;
+}
+
+#service {
+  background-color: #ADADAD;
+  height: 1200px;
+  position: relative;
+}
+
+#service h1 {
+  text-align: center;
+  font-size: 28px;
+  color: #2c2c2f;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.service-relative img {
+  left: 100%;
+  position: relative;
+  transform: translateX(-100%);
+  top: 30px;
+}
+
+.service-absolute {
+  position: absolute;
+  top: 150px;
+  left: 150px;
+  background: #f2f2f2;
+  padding: 100px 100px;
+}
+
+
+.service2-relative img {
+  position: relative;
+  top: 200px;
+}
+
+.service2-absolute {
+  position: absolute;
+  bottom: 200px;
+  right: 0px;
+  background: #f2f2f2;
+  padding: 100px 100px;
+}
+
+.service2-absolute h2 {
+  font-size: 30px;
+}
+.service2-absolute h3 {
+  font-size: 26px;
+}
+.service2-absolute p {
+  font-size: 13px;
+}
+.service2-absolute a {
+}
