@@ -1,3 +1,8 @@
+body {
+  width: 100%;
+  text-align: center;
+}
+
 .header {
   height: 50px;
   background-color: #000;
@@ -31,6 +36,16 @@
   text-decoration: none;
 }
 
+.header-nav a:hover {
+  color: #808080;
+  transition: color .3s;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .eyecatch {
   height: 600px;
   background: url(./img/eyecatch.jpg) no-repeat;
@@ -42,18 +57,18 @@
 .eyecatch h1 {
   position: absolute;
   top: 55%;
-  left: 10%;
+  left: 120px;
   font-size: 38px;
   font-style: italic;
   font-weight: bold;
-  font-family: 'Times New Roman',"ＭＳ Ｐゴシック";
+  font-family: "Times New Roman", "ＭＳ Ｐゴシック";
   color: #f2f2f2;
   line-height: 1;
 }
 
 #mission {
   background-color: #000;
-  height: 300px;
+  height: 400px;
   margin-bottom: 180px;
   justify-content: center;
   position: relative;
@@ -61,39 +76,55 @@
 
 .mission-contents {
   color: #f2f2f2;
-  width: 80%;
+  max-width: 1000px;
   position: relative;
 }
 
 .mission-contents h1 {
-  font-size: 28px;
+  font-size: 20px;
   position: absolute;
   top: 100px;
   left: 150px;
 }
 
 .mission-contents p {
-  font-size: 18px;
+  font-size: 14px;
   position: absolute;
   top: 150px;
   left: 150px;
+  line-height: 1.5em;
 }
 
 .mission-contents a {
-  text-decoration: none;
   position: absolute;
-  top: 260px;
+  top: 240px;
   left: 150px;
+  width: 100px;
+  padding: 8px 20px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #2c2c2f;
+  background-color: #f2f2f2;
+  text-decoration: none;
+  border: 1px #f2f2f2 solid;
+  transition: 0.4s ease;
+  text-align: center;
+}
+
+.mission-contents a:hover {
+  color: #f2f2f2;
+  background: #000;
 }
 
 .mission-contents img {
-  width: 400px;
-  margin-top: 60px;
-  margin-left: 80%;
+  width: 560px;
+  margin-top: 80px;
+  margin-left: 600px;
 }
 
 #service {
-  background-color: #ADADAD;
+  background-color: #adadad;
+  max-width: 1200px;
   height: 1200px;
   position: relative;
 }
@@ -107,42 +138,282 @@
 }
 
 .service-relative img {
-  left: 100%;
-  position: relative;
-  transform: translateX(-100%);
+  display: block;
+  margin-left: auto;
   top: 30px;
+  width: 600px;
+  object-fit: cover;
 }
 
 .service-absolute {
+  text-align: left;
   position: absolute;
-  top: 150px;
-  left: 150px;
+  top: 120px;
+  left: 120px;
   background: #f2f2f2;
-  padding: 100px 100px;
+  padding: 80px 80px;
+  width: 350px;
 }
 
+.service-absolute h2 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.service-absolute h3 {
+  font-size: 14px;
+  line-height: 2.5em;
+  font-weight: normal;
+}
+
+.service-absolute p {
+  font-size: 12px;
+  line-height: 1.5em;
+}
 
 .service2-relative img {
+  display: block;
+  margin-right: auto;
   position: relative;
   top: 200px;
+  width: 600px;
+  height: auto;
+  object-fit: cover;
 }
 
 .service2-absolute {
+  text-align: left;
   position: absolute;
-  bottom: 200px;
-  right: 0px;
+  bottom: 220px;
+  right: 120px;
   background: #f2f2f2;
-  padding: 100px 100px;
+  padding: 80px 80px;
+  width: 350px;
 }
 
 .service2-absolute h2 {
-  font-size: 30px;
+  font-size: 16px;
+  font-weight: bold;
 }
+
 .service2-absolute h3 {
-  font-size: 26px;
+  font-size: 14px;
+  line-height: 2.5em;
+  font-weight: normal;
 }
+
 .service2-absolute p {
-  font-size: 13px;
+  font-size: 12px;
+  line-height: 1.5em;
 }
-.service2-absolute a {
+
+.service-link,
+.service2-link {
+  display: block;
+  margin-left: auto;
+  width: 100px;
+  padding: 8px 20px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #2c2c2f;
+  text-decoration: none;
+  border: 1px #000 solid;
+  transition: 0.4s ease;
+  text-align: center;
+}
+
+.service-link:hover,
+.service2-link:hover {
+  color: #fff;
+  background: #2c2c2f;
+}
+
+#company-recruit {
+  background: #f2f2f2;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.company-recruit-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.company,
+.recruit {
+  position: relative;
+  width: 500px;
+  height: 100px;
+  overflow: hidden;
+  background: #000;
+}
+
+.company img,
+.recruit img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.company span,
+.recruit span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  color: #f2f2f2;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.company h1,
+.recruit h1 {
+  font-size: 18px;
+}
+
+.company p,
+.recruit p {
+  font-size: 12px;
+}
+
+.company:hover img,
+.recruit:hover img {
+  opacity: 0.6;
+  transition-duration: 0.3s;
+}
+
+.faq {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  text-decoration: none;
+  color: #f2f2f2;
+  background: #000;
+  transition: .4s;
+  width: 800px;
+  height: 80px;
+  margin: 30px auto;
+  vertical-align: middle;
+}
+
+.faq:hover {
+  opacity: 0.8;
+}
+
+.faq span {
+  display: flex;
+  justify-content: space-around;
+}
+
+.faq h1 {
+  margin-left: 10px;
+  line-height: 80px;
+  font-size: 18px;
+}
+
+.faq p {
+  margin: 0 auto;
+  line-height: 80px;
+  font-size: 14px;
+}
+
+#contact {
+  background: url(./img/contact-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: #f2f2f2;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+#contact h1 {
+  font-size: 26px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+#contact h2 {
+  font-size: 14px;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+
+#contact h3 {
+  font-size: 26px;
+  font-weight: normal;
+  padding-bottom: 30px;
+}
+
+#contact p {
+  font-size: 12px;
+  padding-bottom: 40px;
+}
+
+#contact a {
+  width: 100px;
+  padding: 8px 20px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #f2f2f2;
+  text-decoration: none;
+  border: 1px #f2f2f2 solid;
+  transition: 0.4s ease;
+}
+
+#contact a:hover {
+  color: #2c2c2f;
+  background: #f2f2f2;
+}
+
+.footer {
+  height: 70px;
+  background-color: #000;
+}
+
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo {
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 30px;
+  color: #f2f2f2;
+  line-height: 50px;
+}
+
+.footer-nav ul {
+  display: flex;
+}
+
+.footer-nav li {
+  margin-right: 30px;
+  font-size: 12px;
+}
+
+.footer-nav a {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+.footer-nav a:hover {
+  color: #808080;
+  transition: color .3s;
+}
+
+.copyright {
+  color: #f2f2f2;
+  font-size: 10px;
+  text-align: center;
 }
