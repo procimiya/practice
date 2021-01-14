@@ -41,11 +41,6 @@ body {
   transition: color .3s;
 }
 
-.main {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 .eyecatch {
   height: 600px;
   background: url(./img/eyecatch.jpg) no-repeat;
@@ -76,7 +71,7 @@ body {
 
 .mission-contents {
   color: #f2f2f2;
-  max-width: 1000px;
+  margin: 0 auto;
   text-align: left;
   position: relative;
 }
@@ -85,21 +80,21 @@ body {
   font-size: 20px;
   position: absolute;
   top: 100px;
-  left: 150px;
+  margin: auto 100px 20px;
 }
 
 .mission-contents p {
   font-size: 14px;
   position: absolute;
   top: 150px;
-  left: 150px;
+  margin: auto 100px;
   line-height: 1.5em;
 }
 
 .mission-contents a {
   position: absolute;
   top: 240px;
-  left: 150px;
+  margin: auto 100px;
   width: 100px;
   padding: 8px 20px;
   font-size: 12px;
@@ -118,14 +113,14 @@ body {
 }
 
 .mission-contents img {
-  width: 560px;
+  width: 540px;
   margin-top: 80px;
-  margin-left: 600px;
+  margin-left: 60%;
 }
 
 #service {
+  margin: 0 auto;
   background-color: #adadad;
-  max-width: 1200px;
   height: 1200px;
   position: relative;
 }
@@ -150,7 +145,7 @@ body {
   text-align: left;
   position: absolute;
   top: 120px;
-  left: 120px;
+  right: 580px;
   background: #f2f2f2;
   padding: 80px 80px;
   width: 350px;
@@ -186,7 +181,7 @@ body {
   text-align: left;
   position: absolute;
   bottom: 220px;
-  right: 120px;
+  left: 580px;
   background: #f2f2f2;
   padding: 80px 80px;
   width: 350px;
@@ -244,8 +239,8 @@ body {
 .company,
 .recruit {
   position: relative;
-  width: 500px;
-  height: 100px;
+  width: 600px;
+  height: 180px;
   overflow: hidden;
   background: #000;
 }
@@ -415,6 +410,6 @@ body {
 
 .copyright {
   color: #f2f2f2;
-  font-size: 10px;
+  font-size: 11px;
   text-align: center;
 }
